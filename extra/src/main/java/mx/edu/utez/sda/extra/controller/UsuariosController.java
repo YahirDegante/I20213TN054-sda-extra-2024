@@ -2,7 +2,6 @@ package mx.edu.utez.sda.extra.controller;
 
 import mx.edu.utez.sda.extra.model.Usuario;
 import mx.edu.utez.sda.extra.service.UsuariosService;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

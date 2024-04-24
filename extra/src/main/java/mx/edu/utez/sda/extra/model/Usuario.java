@@ -4,15 +4,11 @@ package mx.edu.utez.sda.extra.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-
 import java.time.LocalDate;
-import java.util.Date;
 
 @Data
-@AllArgsConstructor
 @Builder
 @Entity
 public class Usuario {
@@ -47,10 +43,6 @@ public class Usuario {
     @Column(columnDefinition = "DATE", nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate feha_nacimiento;
-
-    public Usuario() {
-
-    }
 
     public int getId() {
         return id;
